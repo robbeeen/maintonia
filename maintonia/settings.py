@@ -15,7 +15,6 @@ from decouple import config
 
 DEV = config('DEV', default=False, cast=bool)
 PROD = config('PROD', default=False, cast=bool)
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -29,7 +28,7 @@ SECRET_KEY = 'django-insecure-&oi!1@#9y#p2q^z^l@rg_(tqt7szb-i#kk3n6sbwvvw)vc0l@d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['52.91.59.184']
+ALLOWED_HOSTS = ['127.0.0.1','52.91.59.184']
 
 
 # Application definition
