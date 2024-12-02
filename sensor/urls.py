@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import TestModelCreateView
+from .views import SensorReadingCreateView
 
 urlpatterns = [
-    path('testmodel/', TestModelCreateView.as_view(), name='testmodel-create'),
+    path('sensor_reading/', SensorReadingCreateView.as_view(), name='sensor-create'),
 ]

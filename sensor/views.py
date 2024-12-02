@@ -1,11 +1,11 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .serializers import TestModelSerializer
+from .serializers import SensorReadingsSerializer
 
-class TestModelCreateView(APIView):
+class SensorReadingCreateView(APIView):
     def post(self, request, *args, **kwargs):
-        serializer = TestModelSerializer(data=request.data)
+        serializer = SensorReadingsSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response({"message": "Data created successfully!", "data": serializer.data}, status=status.HTTP_201_CREATED)

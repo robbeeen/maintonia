@@ -1,7 +1,7 @@
-from .models import TestModel
+from .models import SensorReading
 from rest_framework import serializers
 
-class TestModelSerializer(serializers.ModelSerializer):
+class SensorReadingsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TestModel
+        model = SensorReading
         fields = '__all__'
